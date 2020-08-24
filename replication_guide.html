@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="replication-guide-to-manuscript-id-psrm-oa-2019-0032">Replication Guide to Manuscript ID PSRM-OA-2019-0032</h1>
+<h2 id="requirements">Requirements</h2>
+<p><strong>Hardware</strong>: All code was run on a  MacBook Pro 13-inch (2017), 2.3 GHz Dual-Core Intel Core i5 processor, 8GB RAM, and macOS Catalina (v10.15.2).</p>
+<p><strong>Data</strong>: All data is included within the <code>data/</code> subdirectory of these replication files.</p>
+<p><strong>Software</strong>: <em>R (v3.6.0)</em></p>
+<p><strong>Package requirements</strong>:</p>
+<ul>
+<li>openxlsx – 4.1.0.1</li>
+<li>xtable – 1.8-4</li>
+<li>gridExtra – 2.3</li>
+<li>coefplot – 1.2.6</li>
+<li>dummies – 1.5.6</li>
+<li>nnet – 7.3–12</li>
+<li>stargazer – 5.2.2</li>
+<li>tidyverse – 1.3.0</li>
+<li>lubridate – 1.7.4</li>
+<li>ggrepel – 0.8.1</li>
+<li>cregg – 0.3.0</li>
+</ul>
+<p><strong>Total replication time</strong>: approx. 1 minute.</p>
+<h2 id="replication-workflow">Replication workflow</h2>
+<p>All figures and tables (except the non-analytic Table 1) are produced via three R scripts:</p>
+<ul>
+<li><code>1_main_replication.R</code> produces Figures 1-4 and Tables 2 and 4</li>
+<li><code>2_iet_analysis.R</code> produces Table 3</li>
+<li><code>3_appendix_replication.R</code> produces all Figures and Tables in the Appendix</li>
+</ul>
+<p>To execute all the replication files, we have also included a small bash file that can be executed at the command line:</p>
+<pre><code>bash main_replication.sh
+</code></pre>
+<p>Text output of the replication conducted on the author’s computer is saved as <code>replication_log.txt</code>.</p>
+<p><strong>Note:</strong> the main conjoint models are generated using <code>0_main_models.R</code> – since these models are used for both the main and appendix figures/tables, this code is sourced into the necessary replication files automatically. Users do not need to run this file separately.</p>
+</div>
+</body>
+
+</html>
